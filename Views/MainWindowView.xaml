@@ -12,7 +12,7 @@
         BorderThickness="0"
         Topmost="True"
         Visibility="Visible"
-        Title="MainWindow" Height="544.024" Width="535.83" WindowStyle="None">
+        Title="MainWindow" Height="560.524" Width="522.33" WindowStyle="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="24"/>
@@ -35,7 +35,7 @@
                         Kind="WindowMinimize" 
                         Margin="-14 0 0 0"/>
             </Button>
-            
+
             <Button 
                 Background="{x:Null}" 
                 BorderBrush="{x:Null}" 
@@ -48,11 +48,79 @@
             </Button>
         </StackPanel>
 
-        <ScrollViewer
+        <Grid
             Grid.Row="1"
+            Height="Auto"
+            Width="Auto"
+            >
+            <ScrollViewer
+            
             Margin="5"
             VerticalScrollBarVisibility="Auto">
-        </ScrollViewer>
-        
+                <ItemsControl ItemsSource="{Binding RequestCollection}"
+                              >
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Expander Background="WhiteSmoke">
+
+                                <Expander.Header>
+                                    <StackPanel Margin="-15,0,0,0">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                         
+                                            <StackPanel
+                                                Grid.Column="0"
+                                                Orientation="Horizontal">
+                                                <TextBlock
+                                                    Width="150"
+                                                    Text="{Binding Path=Url}"
+                                                />
+                                                <TextBlock
+                                                    Width="50"
+                                                    Text="{Binding Path=TimeOut}"
+                                                />
+                                                <TextBlock
+                                                    Width="50"
+                                                    Text="{Binding Path=ResponseString}"
+                                                />
+                                                
+
+                                                <Button
+                                                    Width="100"
+                                                    Content="Запустить"
+                                                    Command="{Binding DataContext.RunRequest, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                                    CommandParameter="{Binding}"
+                                                    />
+
+                                            </StackPanel>
+
+
+
+                                        </Grid>
+                                    </StackPanel>
+                                </Expander.Header>
+                            </Expander>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+            </ScrollViewer>
+
+            <Button
+                Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="15"
+                Style="{StaticResource MaterialDesignFloatingActionButton}"
+                FontSize="32"
+                Content="+"
+                Command="{Binding AddNewRequest}"
+            >
+            </Button>
+        </Grid>
+
     </Grid>
 </Window>

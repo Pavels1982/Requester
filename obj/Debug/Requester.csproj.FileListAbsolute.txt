@@ -21,3 +21,4 @@ C:\Users\Pavel\source\repos\Requester\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Pavel\source\repos\Requester\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Pavel\source\repos\Requester\obj\Debug\App.baml
 C:\Users\Pavel\source\repos\Requester\obj\Debug\Resources\Strings.baml
+C:\Users\Pavel\source\repos\Requester\obj\Debug\Requester.csprojAssemblyReference.cache

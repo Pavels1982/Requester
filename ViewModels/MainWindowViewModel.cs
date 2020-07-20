@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Requester.Models;
+using Requester.Services;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -13,14 +16,35 @@ namespace Requester.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public RequestManager RequestManager { get; set; } = RequestManager.GetInstance();
+        public ObservableCollection<RequestObject> RequestCollection { get; set; } 
+
         #region Commands
         public ICommand CloseWindow
         {
-            get 
+            get
             {
                 return new RelayCommand((o) => CloseApp());
             }
         }
+
+        public ICommand AddNewRequest
+        {
+            get
+            {
+                return new RelayCommand((o) => RequestManager.Add());
+            }
+        }
+
+        public ICommand RunRequest
+        {
+            get
+            {
+                return new RelayCommand<RequestObject>(RequestManager.Run);
+            }
+
+        }
+
         #endregion
 
 
@@ -29,7 +53,8 @@ namespace Requester.ViewModels
         /// Конструктор по умолчанию.
         /// </summary>
         public MainWindowViewModel()
-        { 
+        {
+            this.RequestCollection = RequestManager.RequestCollection;
         }
         #endregion
 
