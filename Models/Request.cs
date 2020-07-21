@@ -18,7 +18,7 @@ namespace Requester.Models
         public int Interval { get; set; }
 
 
-        public Request(string url, int timeOut = 230)
+        public Request(string url, int timeOut = 5)
         {
             this.Url = url;
             this.TimeOut = timeOut;

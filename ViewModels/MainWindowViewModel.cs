@@ -91,7 +91,6 @@ namespace Requester.ViewModels
         }
         #endregion
 
-
         #region Methods
         private void CloseApp()
         {

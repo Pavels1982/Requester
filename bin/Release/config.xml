@@ -12,7 +12,15 @@
     <timeout>230</timeout>
     <interval>6</interval>
   </Request>
-  <Request url="http://googl.co1m">
+  <Request url="http://httpstat.us/200">
+    <timeout>230</timeout>
+    <interval>0</interval>
+  </Request>
+  <Request url="http://httpstat.us/200">
+    <timeout>230</timeout>
+    <interval>0</interval>
+  </Request>
+  <Request url="http://httpstat.us/200">
     <timeout>230</timeout>
     <interval>0</interval>
   </Request>
