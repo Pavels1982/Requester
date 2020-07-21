@@ -66,6 +66,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CustomControls\MaterialNumericUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Strings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,10 +82,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CustomControls\MaterialNumericUpDown.xaml.cs">
+      <DependentUpon>MaterialNumericUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Request.cs" />
     <Compile Include="Models\RequestObject.cs" />
+    <Compile Include="Services\Converters\EnumBooleanConverter.cs" />
+    <Compile Include="Services\Converters\IntToTimeConverter.cs" />
     <Compile Include="Services\Enums.cs" />
+    <Compile Include="Services\PathManager.cs" />
     <Compile Include="Services\RelayCommand.cs" />
     <Compile Include="Services\RequestManager.cs" />
+    <Compile Include="Services\UnixTimeHelper.cs" />
+    <Compile Include="Services\XMLHelper.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindowView.xaml.cs">
       <DependentUpon>MainWindowView.xaml</DependentUpon>

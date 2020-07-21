@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Requests>
+  <Request url="http://sdfs">
+    <timeout>2</timeout>
+    <interval>5</interval>
+  </Request>
+  <Request url="http://htt">
+    <timeout>230</timeout>
+    <interval>5</interval>
+  </Request>
+  <Request url="http://htt">
+    <timeout>230</timeout>
+    <interval>5</interval>
+  </Request>
+  <Request url="http://https">
+    <timeout>4</timeout>
+    <interval>1</interval>
+  </Request>
+  <Request url="http://https">
+    <timeout>230</timeout>
+    <interval>3</interval>
+  </Request>
+  <Request url="http://https">
+    <timeout>230</timeout>
+    <interval>1</interval>
+  </Request>
+  <Request url="http://https">
+    <timeout>230</timeout>
+    <interval>1</interval>
+  </Request>
+</Requests>

@@ -45,8 +45,33 @@ namespace Requester.ViewModels
 
         }
 
-        #endregion
 
+        public ICommand RunAbortedRequests
+        {
+            get
+            {
+                return new RelayCommand((o) =>
+                {
+                    RequestCollection.Where(req => req.IsAborted).ToList().ForEach(request => request.Run(true));
+                });
+            }
+
+        }
+
+        public ICommand AbortedRequests
+        {
+            get
+            {
+                return new RelayCommand((o) =>
+                {
+                    RequestCollection.ToList().ForEach(request => request.Abort());
+                });
+            }
+
+        }
+
+
+        #endregion
 
         #region Constructor
         /// <summary>
@@ -62,6 +87,7 @@ namespace Requester.ViewModels
         #region Methods
         private void CloseApp()
         {
+            XMLHelper.SaveRequests(this.RequestCollection, PathManager.GetConfigFilePath());
             Application.Current.Shutdown();
         }
         #endregion

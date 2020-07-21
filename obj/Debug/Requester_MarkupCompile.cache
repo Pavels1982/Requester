@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Pavel\source\repos\Requester\obj\Debug\
+D:\Рабочая\Requester\Requester\obj\Debug\
 Requester
 none
 false
 DEBUG;TRACE
-C:\Users\Pavel\source\repos\Requester\App.xaml
-2-1518974976
+D:\Рабочая\Requester\Requester\App.xaml
+3-91405697
 
-10-1181380871
-16-1659235246
-Resources\Strings.xaml;Views\MainWindowView.xaml;
+21-2136861831
+161265175322
+CustomControls\MaterialNumericUpDown.xaml;Resources\Strings.xaml;Views\MainWindowView.xaml;
 
-False
+True
 
