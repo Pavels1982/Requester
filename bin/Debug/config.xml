@@ -1,31 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Requests>
-  <Request url="http://sdfs">
-    <timeout>2</timeout>
-    <interval>5</interval>
-  </Request>
-  <Request url="http://htt">
+  <Request url="http://httpstat.us/200">
     <timeout>230</timeout>
-    <interval>5</interval>
+    <interval>0</interval>
   </Request>
-  <Request url="http://htt">
+  <Request url="http://httpstat.us/200">
     <timeout>230</timeout>
-    <interval>5</interval>
+    <interval>0</interval>
   </Request>
-  <Request url="http://https">
-    <timeout>4</timeout>
-    <interval>1</interval>
-  </Request>
-  <Request url="http://https">
+  <Request url="http://httpstat.us/200">
     <timeout>230</timeout>
-    <interval>3</interval>
+    <interval>0</interval>
   </Request>
-  <Request url="http://https">
+  <Request url="http://httpstat.us/200">
     <timeout>230</timeout>
-    <interval>1</interval>
-  </Request>
-  <Request url="http://https">
-    <timeout>230</timeout>
-    <interval>1</interval>
+    <interval>0</interval>
   </Request>
 </Requests>

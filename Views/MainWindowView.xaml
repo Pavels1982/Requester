@@ -14,6 +14,7 @@
         BorderThickness="0"
         Topmost="True"
         Visibility="Visible"
+        MinWidth="760"
         Title="MainWindow" Height="560.524" Width="522.33" WindowStyle="None">
     <Window.Resources>
         <converters:IntToTimeConverter x:Key="IntToTimeConverter"/>
@@ -227,12 +228,17 @@
                                         </Grid>
                                     </StackPanel>
                                 </Expander.Header>
-                                    <UniformGrid Rows="2" Columns="3"
-                                                 Background="LightGray"
-                                                 
-                                                 >
-                                    <UniformGrid.Style>
-                                        <Style TargetType="UniformGrid">
+                                <Grid Height="90"
+                                      Background="LightGray">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.35*"/>
+                                        <ColumnDefinition Width="0.25*"/>
+                                        <ColumnDefinition Width="0.25*"/>
+                                        <ColumnDefinition Width="0.10*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.Style>
+                                        <Style TargetType="Grid">
                                             <Setter Property="IsEnabled" Value="True"/>
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
@@ -240,22 +246,19 @@
                                                 </DataTrigger>
                                             </Style.Triggers>
                                         </Style>
-                                    </UniformGrid.Style>
+                                    </Grid.Style>
+
+                                   
+
 
                                     <TextBox
                                          Grid.Column="0"
-                                         Grid.Row="0"
                                          Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                                          materialDesign:HintAssist.Hint="Url"
-                                         Margin="8 0 0 0"
-                                         VerticalAlignment="Bottom" 
-                                        Text="{Binding Path=Request.Url, UpdateSourceTrigger=PropertyChanged}"
+                                         Margin="8 -8 0 0"
+                                        Height="44"
+                                           Text="{Binding Path=Request.Url, UpdateSourceTrigger=PropertyChanged}"
                                         >
-                                        <!--<Binding Path="Request.Url" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
-                                        <Binding.ValidationRules>
-                                                <services:UriValidation  ValidatesOnTargetUpdated="True" />
-                                        </Binding.ValidationRules>
-                                        </Binding>-->
                                     </TextBox>
                                         
 
@@ -263,7 +266,6 @@
                          
                                         Title="Время ожидание ответа в сек."
                                         Grid.Column="1"
-                                        Grid.Row="0"
                                         Increment="1"
                                         Maximum="230"
                                         Minimum="0"
@@ -271,7 +273,6 @@
                                         />
 
                                     <customControls:MaterialNumericUpDown
-                                        
                                         Title="Интервал между запросами в сек."
                                         Grid.Column="2"
                                         Grid.Row="0"
@@ -281,11 +282,19 @@
                                         Value="{Binding Path=Request.Interval, Mode=TwoWay}"
                                         />
 
+                                    <Button
+                                        Grid.Column="3"
+                                        Foreground="Black"
+                                        Style="{StaticResource MaterialDesignFlatButton}"
+                                        Command="{Binding DataContext.DeleteRequest, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                        CommandParameter="{Binding}">
+
+                                    <materialDesign:PackIcon Kind="DeleteForever"  Width="25" Height="25"/>
+                                    </Button>
 
 
 
-
-                                </UniformGrid>
+                                </Grid>
                             </Expander>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>

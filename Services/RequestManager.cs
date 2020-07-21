@@ -70,14 +70,19 @@ namespace Requester.Services
             }
         }
 
+
         public void Add()
         {
             instance.RequestCollection.Add(new RequestObject());
+            Logs.Add(String.Format("Добавление пользователем нового запроса. "));
         }
 
         public void Remove(RequestObject request)
         {
+            Logs.Add(String.Format(string.Format("Удаление пользователем запроса со следующими параметрами: Url {0}, TimeOut {1}, Interval {2}", request.Request.Url, request.Request.TimeOut, request.Request.Interval)));
             instance.RequestCollection.Remove(request);
+            
+
         }
 
         

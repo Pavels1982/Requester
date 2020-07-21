@@ -70,6 +70,14 @@ namespace Requester.ViewModels
 
         }
 
+        public ICommand DeleteRequest
+        {
+            get
+            {
+                return new RelayCommand<RequestObject>(RequestManager.Remove);
+            }
+        }
+
 
         #endregion
 

@@ -63,15 +63,15 @@
         </Style>
     </UserControl.Resources>
     <Grid 
-        Margin="0 12 0 0 "
+        Margin="0 8 0 0 "
         Width="150">
         <Grid.RowDefinitions>
-            <RowDefinition Height="16"/>
-            <RowDefinition Height="24"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
        
@@ -82,6 +82,7 @@
             Grid.Row="0"
             Grid.ColumnSpan="3"
             VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
             FontSize="9"
             Text="{Binding RelativeSource={RelativeSource FindAncestor, 
                                  AncestorType={x:Type local:MaterialNumericUpDown}}, 
@@ -97,6 +98,7 @@
             Grid.Column="0"
             Name="DownButton"
             Click="DownButton_Click"
+            
             Style="{StaticResource RepeatButtonFlatStyle}"
             materialDesign:RippleAssist.Feedback="#DD000000"
 

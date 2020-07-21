@@ -30,7 +30,6 @@ namespace Requester.Models
         public int LastRequestTimeEnded { get; set; }
 
 
-
         public RequestObject()
         {
             Request = new Request("http://httpstat.us/200");
@@ -55,7 +54,7 @@ namespace Requester.Models
                     if (!IsAborted)
                     {
                         DurationRequestTime = 0;
-                        await RequestAsync(this.Request.Url);
+                        RequestAsync(this.Request.Url);
                     }
                 }
                 else
@@ -76,45 +75,55 @@ namespace Requester.Models
 
 
 
-        private async Task RequestAsync(string url)
+        private void RequestAsync(string url)
         {
             Status = Status.Process;
 
-            currentRequest = (HttpWebRequest)WebRequest.Create(url);
-            currentRequest.Method = "GET";
-            currentRequest.Timeout = this.Request.TimeOut * 1000;
-            currentRequest.ContentType = "application/json";
-            this.Request.Response = string.Empty;
-       
-            this.LastRequestTimeEnded = UnixTimeHelper.UnixTimeNow();
+             new Thread((o) =>
+             {
+                 currentRequest = (HttpWebRequest)WebRequest.Create(url);
+                 //currentRequest.Method = "GET";
+                 currentRequest.Timeout = this.Request.TimeOut * 1000;
+                 currentRequest.ContentType = "application/json";
+                 this.Request.Response = string.Empty;
 
-            try
-            {
-                HttpWebResponse response = (HttpWebResponse) await currentRequest.GetResponseAsync();
-                this.Request.Response = response.StatusCode.ToString();
-                response.Close();
-            }
-            catch (Exception ex)
-            {
-                this.Request.Response = ex.ToString();
-                this.DurationRequestTime = UnixTimeHelper.UnixTimeNow() - this.LastRequestTimeEnded;  
+                 this.LastRequestTimeEnded = UnixTimeHelper.UnixTimeNow();
+                 try
+                 {
+                    HttpWebResponse response = (HttpWebResponse)currentRequest.GetResponse();
+                    this.Request.Response = response.StatusCode.ToString();
+                    response.Close();
+                 }
+                catch (Exception ex)
+                {
+                    this.Request.Response = ex.ToString();
+                }
 
-            }
+                this.DurationRequestTime = UnixTimeHelper.UnixTimeNow() - this.LastRequestTimeEnded;
+                Status = Status.ReadyToPost;
 
-            Status = Status.ReadyToPost;
-            if (this.Request.Interval == 0) IsAborted = true;
-            currentRequest = null;
+                if (this.Request.Interval == 0) IsAborted = true;
+
+                 string logString = string.Format("Адрес {0} вернул код: {1}. Время обращения: {2}. Ожидание ответа: {3}", Request.Url, Request.Response, TimeToString(LastRequestTimeEnded), TimeToString(DurationRequestTime));
+                 Logs.Add(logString);
+                 currentRequest = null;
+            }).Start();
         }
 
+        private string TimeToString(int seconds)
+        {
+            var t = TimeSpan.FromSeconds(seconds);
+            return t.ToString(@"hh\:mm\:ss");
+        }
 
         public void Abort()
         {
             IsAborted = true;
-            new Thread((o) =>
+
+            if (currentRequest != null)
             {
-                if (currentRequest != null)
-                    currentRequest.Abort();
-            });
+                currentRequest.Abort();
+            }
        
         }
 

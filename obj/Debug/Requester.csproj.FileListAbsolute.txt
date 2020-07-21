@@ -48,3 +48,6 @@ D:\Рабочая\Requester\Requester\obj\Debug\Requester.csproj.GenerateResourc
 D:\Рабочая\Requester\Requester\obj\Debug\Requester.exe
 D:\Рабочая\Requester\Requester\obj\Debug\Requester.pdb
 D:\Рабочая\Requester\Requester\obj\Debug\Requester.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\source\repos\Requester\obj\Debug\CustomControls\MaterialNumericUpDown.g.cs
+C:\Users\Pavel\source\repos\Requester\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Pavel\source\repos\Requester\obj\Debug\CustomControls\MaterialNumericUpDown.baml

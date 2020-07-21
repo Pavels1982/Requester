@@ -90,6 +90,7 @@
     <Compile Include="Services\Converters\EnumBooleanConverter.cs" />
     <Compile Include="Services\Converters\IntToTimeConverter.cs" />
     <Compile Include="Services\Enums.cs" />
+    <Compile Include="Services\Logs.cs" />
     <Compile Include="Services\PathManager.cs" />
     <Compile Include="Services\RelayCommand.cs" />
     <Compile Include="Services\RequestManager.cs" />
