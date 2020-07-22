@@ -10,13 +10,13 @@
         xmlns:converters="clr-namespace:Requester.Services.Converters"
         Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
         mc:Ignorable="d"
-        Activated="Window_Activated"
+        Loaded="Window_Loaded"
         Closing="Window_Closing"
         WindowStartupLocation="CenterScreen"
         BorderThickness="0"
         MinWidth="760"
         MinHeight="240"
-        Title="Requester" Height="560.524" Width="522.33">
+        Title="{StaticResource AppTitle}" Height="560.524" Width="522.33">
     <Window.Resources>
         <converters:IntToTimeConverter x:Key="IntToTimeConverter"/>
         <converters:EnumBooleanConverter x:Key="EnumBooleanConverter"/>
@@ -40,34 +40,36 @@
                     Margin="20"
                     FontSize="24"
                     Foreground="WhiteSmoke"
-                    Text="Requester"/>
+                    Text="{StaticResource AppTitle}"/>
                 </materialDesign:ColorZone>
 
 
 
                 <StackPanel 
-            Grid.Row="1" 
-            Orientation="Horizontal" 
-            HorizontalAlignment="Right"
-            Margin="0 12 15 12 "
+                        Grid.Row="1" 
+                        Orientation="Horizontal" 
+                        HorizontalAlignment="Right"
+                        Margin="0 12 15 12 "
             >
                     <materialDesign:Badged
-            Badge="{Binding RequestManager.AbortedRequests}"
-            Margin="12"
+                        Badge="{Binding RequestManager.AbortedRequests}"
+                        Margin="12"
             >
                         <Button 
-                Width="100"
-                Content="Запустить"
-                Command="{Binding RunAbortedRequests}"
+                            ToolTip="{StaticResource RunRequestsTip}"
+                            Width="100"
+                            Content="{StaticResource RunRequest}"
+                            Command="{Binding RunAbortedRequests}"
                 >
                         </Button>
 
                     </materialDesign:Badged>
 
                     <Button 
-                Width="120"
-                Content="Остановить"
-                Command="{Binding AbortedRequests}"
+                           ToolTip="{StaticResource AbortRequestsTip}"
+                            Width="120"
+                            Content="{StaticResource AbortRequests}"
+                            Command="{Binding AbortedRequests}"
                 >
                     </Button>
 
@@ -79,29 +81,36 @@
             Height="Auto"
             Width="Auto">
                     <ScrollViewer
-                VerticalScrollBarVisibility="Visible">
+                             VerticalScrollBarVisibility="Visible">
                         <ItemsControl ItemsSource="{Binding RequestCollection}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <Expander Background="WhiteSmoke" Margin="2"
+                                        <Expander Background="WhiteSmoke" Margin="2"
                                       BorderThickness="0.5"
                                       BorderBrush="DimGray">
-
                                         <Expander.Header>
                                             <StackPanel Margin="-15,-10,0,0">
-                                                <Grid Height="72">
+                                                <Grid Height="78">
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition Width="0.6*" />
                                                         <ColumnDefinition Width="0.4*" />
                                                     </Grid.ColumnDefinitions>
                                                     <Grid Grid.Column="0">
+                                                        <StackPanel
+                                                          Orientation="Vertical">
+                                                            <TextBlock
+                                                                Foreground="DarkGray"
+                                                                Margin="2 2 0 0"
+                                                                 Text="{Binding Path=Request.Url}"
+                                                                     />
+                                                     
                                                         <TextBox
                                                         Margin="2"
                                                         Height="55"
                                                         FontSize="10"
                                                         TextWrapping="Wrap"
                                                         VerticalScrollBarVisibility="Auto"
-                                                        materialDesign:HintAssist.Hint="Код ответа:"
+                                                        materialDesign:HintAssist.Hint="{StaticResource ServerResponse}"
                                                         Text="{Binding Path=Request.Response, Mode=TwoWay}"
                                                         >
                                                             <TextBox.Style>
@@ -116,11 +125,13 @@
                                                                 </Style>
                                                             </TextBox.Style>
                                                         </TextBox>
+
+                                                        </StackPanel>
                                                     </Grid>
 
 
                                                     <Grid
-                                                Grid.Column="1">
+                                                         Grid.Column="1">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition/>
                                                             <ColumnDefinition/>
@@ -139,7 +150,7 @@
                                                         HorizontalAlignment="Center"
                                                         Foreground="Gray"
                                                         FontSize="10"
-                                                        Text="Длительность запроса"/>
+                                                        Text="{StaticResource ResponseDuration}"/>
                                                             <TextBlock 
                                                         HorizontalAlignment="Center"
                                                         FontSize="16"
@@ -148,52 +159,48 @@
                                                         </StackPanel>
 
                                                         <StackPanel
-                                                    Margin="2"
-                                                    Grid.Column="1"
-                                                    Grid.Row="0"
-                                                    Orientation="Vertical">
+                                                              Margin="2"
+                                                              Grid.Column="1"
+                                                              Grid.Row="0"
+                                                              Orientation="Vertical">
                                                             <TextBlock 
-                                                        HorizontalAlignment="Center"
-                                                        Foreground="Gray"
-                                                        FontSize="10"
-                                                        Text="Время последнего запроса"/>
+                                                                HorizontalAlignment="Center"
+                                                                Foreground="Gray"
+                                                                FontSize="10"
+                                                                Text="{StaticResource LastTimeResonse}"/>
                                                             <TextBlock 
-                                                        HorizontalAlignment="Center"
-                                                        FontSize="16"
-                                                        Text="{Binding Path=LastRequestTimeEnded, Converter={StaticResource IntToTimeConverter}}"/>
+                                                                HorizontalAlignment="Center"
+                                                                FontSize="16"
+                                                                Text="{Binding Path=LastRequestTimeEnded, Converter={StaticResource IntToTimeConverter}}"/>
 
                                                         </StackPanel>
 
 
-
-
                                                         <Button                                                    
-                                                    Grid.Column="0"
-                                                    Grid.Row="1"
-                                                    Grid.ColumnSpan="2"
-                                                    Width="100"
-                                                    materialDesign:ButtonProgressAssist.Value="-1"
-                                                    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
-                                                    
-                                                    Command="{Binding DataContext.RunRequest, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
-                                                    CommandParameter="{Binding}"
-                                                    >
+                                                            Grid.Column="0"
+                                                            Grid.Row="1"
+                                                            Grid.ColumnSpan="2"
+                                                            Width="100"
+                                                            materialDesign:ButtonProgressAssist.Value="-1"
+                                                            materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                                                            Command="{Binding DataContext.RunRequest, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                                            CommandParameter="{Binding}" >
                                                             <Button.Style>
                                                                 <Style BasedOn="{StaticResource MaterialDesignRaisedButton}" TargetType="Button">
                                                                     <Setter Property="materialDesign:ButtonProgressAssist.IsIndeterminate" Value="False"/>
-                                                                    <Setter Property="Content" Value="Пуск"/>
+                                                                    <Setter Property="Content" Value="{StaticResource Start}"/>
+                                                                    <Setter Property="ToolTip" Value="{StaticResource RunRequestTip}"/>
+                                                                    
                                                                     <Style.Triggers>
                                                                         <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
                                                                             <Setter Property="materialDesign:ButtonProgressAssist.IsIndeterminate" Value="True"/>
-                                                                            <Setter Property="Content" Value="Стоп"/>
+                                                                            <Setter Property="Content" Value="{StaticResource Stop}"/>
+                                                                            <Setter Property="ToolTip" Value="{StaticResource AbortRequestTip}"/>
                                                                         </DataTrigger>
                                                                     </Style.Triggers>
                                                                 </Style>
                                                             </Button.Style>
                                                         </Button>
-
-
-
                                                     </Grid>
 
 
@@ -201,7 +208,7 @@
                                             </StackPanel>
                                         </Expander.Header>
                                         <Grid Height="90"
-                                      Background="LightGray">
+                                              Background="LightGray">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="0.35*"/>
                                                 <ColumnDefinition Width="0.25*"/>
@@ -224,19 +231,19 @@
 
 
                                             <TextBox
-                                         Grid.Column="0"
-                                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                                         materialDesign:HintAssist.Hint="Url"
-                                         Margin="8 -8 0 0"
-                                        Height="44"
-                                           Text="{Binding Path=Request.Url, UpdateSourceTrigger=PropertyChanged}"
-                                        >
-                                            </TextBox>
+                                                  Grid.Column="0"
+                                                  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                                                  materialDesign:HintAssist.Hint="Url"
+                                                  Margin="8 -8 0 0"
+                                                  Height="44"
+                                                  Text="{Binding Path=Request.Url, UpdateSourceTrigger=PropertyChanged}" >
+                                                </TextBox>
+                                          
 
 
                                             <customControls:MaterialNumericUpDown
                          
-                                        Title="Время ожидание ответа в сек."
+                                        Title="{StaticResource TimeOutDescription}"
                                         Grid.Column="1"
                                         Increment="1"
                                         Maximum="230"
@@ -245,7 +252,7 @@
                                         />
 
                                             <customControls:MaterialNumericUpDown
-                                        Title="Интервал между запросами в сек."
+                                        Title="{StaticResource IntervalDescription}"
                                         Grid.Column="2"
                                         Grid.Row="0"
                                         Increment="1"
@@ -255,6 +262,7 @@
                                         />
 
                                             <Button
+                                                ToolTip="{StaticResource RemoveRequestTip}"
                                         Grid.Column="3"
                                         Foreground="Black"
                                         Style="{StaticResource MaterialDesignFlatButton}"
@@ -267,7 +275,8 @@
 
 
                                         </Grid>
-                                    </Expander>
+                                        </Expander>
+                                
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
@@ -290,6 +299,7 @@
             </Grid>
 
             <Button
+                ToolTip="{StaticResource CreateRequestTip}"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Bottom"
                 Margin="15 0 25 35"

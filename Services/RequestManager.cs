@@ -12,6 +12,10 @@ using static Requester.Services.Enums;
 
 namespace Requester.Services
 {
+    /// <summary>
+    /// Класс-синглтон  взаимодействия с объектами запроса. Через данный класс выполняются операции запуска процессов, удаления, 
+    /// создание новых объектов-запросов.  
+    /// </summary>
     public class RequestManager : INotifyPropertyChanged
     {
         #region Fields
@@ -35,7 +39,7 @@ namespace Requester.Services
         public ObservableCollection<RequestObject> RequestCollection { get; private set; }
 
         /// <summary>
-        /// Gets or sets количество прерванный либо невыполняемых в данный момент запросов.
+        /// Gets or sets количество прерванных либо невыполняемых в данный момент запросов.
         /// </summary>
         public int AbortedRequests { get; private set; }
         #endregion
@@ -119,10 +123,6 @@ namespace Requester.Services
 
         }
         #endregion
-
-
-
-
 
     }
 }

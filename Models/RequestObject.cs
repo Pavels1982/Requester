@@ -1,18 +1,15 @@
 ﻿using Requester.Services;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Threading;
 using static Requester.Services.Enums;
 
 namespace Requester.Models
 {
+    /// <summary>
+    /// Класс объекта модели запроса.
+    /// </summary>
     public class RequestObject : INotifyPropertyChanged
     {
 
@@ -24,7 +21,6 @@ namespace Requester.Models
         /// </summary>
         private HttpWebRequest currentRequest;
         #endregion
-
 
         #region Properties
 
@@ -54,8 +50,6 @@ namespace Requester.Models
         public int LastRequestTimeEnded { get; private set; }
         #endregion
 
-
-
         #region Constructors
         /// <summary>
         /// Конструктор по умолчанию.
@@ -73,7 +67,6 @@ namespace Requester.Models
             this.Request = request;
         }
         #endregion
-
 
         #region Methods
 
@@ -177,8 +170,6 @@ namespace Requester.Models
        
         }
         #endregion
-
-
 
     }
 }

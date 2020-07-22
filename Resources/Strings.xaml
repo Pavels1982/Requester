@@ -1,5 +1,30 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:Requester.Resources">
+                    xmlns:local="clr-namespace:Requester.Resources"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="Ok">Ок</system:String>
+    <system:String x:Key="Cancel">Отмена</system:String>
+    <system:String x:Key="AppTitle">Requester</system:String>
+    <system:String x:Key="RunRequest">Запустить</system:String>
+    <system:String x:Key="AbortRequests">Остановить</system:String>
+    <system:String x:Key="ServerResponse">Ответ от сервера:</system:String>
+    <system:String x:Key="ResponseDuration">Длительность запроса</system:String>
+    <system:String x:Key="LastTimeResonse">Время последнего запроса</system:String>
+    <system:String x:Key="Start">Пуск</system:String>
+    <system:String x:Key="Stop">Стоп</system:String>
+    <system:String x:Key="TimeOutDescription">Время ожидание ответа в сек.</system:String>
+    <system:String x:Key="IntervalDescription">Интервал между запросами в сек.</system:String>
+    <system:String x:Key="ResponseDeleteConfirm">Удалить задачу?</system:String>
+    <system:String x:Key="ValidationError">Ошибка при валидации XML! Продолжить работу с программой?</system:String>
+    <system:String x:Key="CloseAppConfirm">Выйти из приложения?</system:String>
+    <system:String x:Key="CreateRequestTip">Добавить задачу</system:String>
+    <system:String x:Key="RunRequestsTip">Запустить все(приостановленные) задачи.</system:String>
+    <system:String x:Key="AbortRequestsTip">Остановить все задачи.</system:String>
+    <system:String x:Key="RemoveRequestTip">Удалить задачу.</system:String>
+    <system:String x:Key="RunRequestTip">Запустить задачу.</system:String>
+    <system:String x:Key="AbortRequestTip">Остановить задачу.</system:String>
     
+    
+
 </ResourceDictionary>

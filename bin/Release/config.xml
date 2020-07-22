@@ -1,27 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Requests>
-  <Request url="http://httpstat.us/200">
-    <timeout>230</timeout>
-    <interval>3</interval>
-  </Request>
-  <Request url="http://httpstat.us/200">
-    <timeout>230</timeout>
+  <Request url="http://httpstat.us/200?sleep=3000">
+    <timeout>4</timeout>
     <interval>5</interval>
   </Request>
-  <Request url="http://httpstat.us/200">
-    <timeout>230</timeout>
+  <Request url="http://httpstat.us/200?sleep=5000">
+    <timeout>7</timeout>
+    <interval>10</interval>
+  </Request>
+  <Request url="http://google.com">
+    <timeout>5</timeout>
+    <interval>9</interval>
+  </Request>
+  <Request url="http://httpstat.us/512">
+    <timeout>9</timeout>
+    <interval>12</interval>
+  </Request>
+  <Request url="http://httpstat.us/100">
+    <timeout>6</timeout>
+    <interval>8</interval>
+  </Request>
+  <Request url="http://httpstat.us/200?sleep=3000">
+    <timeout>7</timeout>
+    <interval>9</interval>
+  </Request>
+  <Request url="http://httpstat.us/200?sleep=6000">
+    <timeout>7</timeout>
+    <interval>10</interval>
+  </Request>
+  <Request url="http://httpstat.us/400?sleep=15000">
+    <timeout>18</timeout>
+    <interval>25</interval>
+  </Request>
+  <Request url="http://httpstat.us/300">
+    <timeout>6</timeout>
     <interval>6</interval>
   </Request>
-  <Request url="http://httpstat.us/200">
-    <timeout>230</timeout>
-    <interval>0</interval>
+  <Request url="http://httpstat.us/200?sleep=5000">
+    <timeout>7</timeout>
+    <interval>10</interval>
   </Request>
-  <Request url="http://httpstat.us/200">
-    <timeout>230</timeout>
-    <interval>0</interval>
-  </Request>
-  <Request url="http://httpstat.us/200">
-    <timeout>230</timeout>
-    <interval>0</interval>
+  <Request url="http://httpstat.us/200?sleep=5000">
+    <timeout>7</timeout>
+    <interval>10</interval>
   </Request>
 </Requests>

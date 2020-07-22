@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Requester.Services
 {
@@ -18,9 +19,13 @@ namespace Requester.Services
         /// <returns>true - Нажата кнопка ОК, false - Нажата кнопка Отмена</returns>
         public static async Task<bool> ShowDialog(string message)
         {
+            string msg = (string)Application.Current.Resources[message];
+
+            if (msg == null) msg = message;
+
             var view = new ConfirmDialog()
             {
-                DataContext = new ConfirmDialogViewModel(message)
+                DataContext = new ConfirmDialogViewModel(msg)
             };
 
             return (bool)await DialogHost.Show(view);

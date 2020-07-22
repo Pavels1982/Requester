@@ -25,3 +25,5 @@ C:\Users\Pavel\source\repos\Requester\obj\Release\Requester.csproj.GenerateResou
 C:\Users\Pavel\source\repos\Requester\obj\Release\Requester.csproj.CopyComplete
 C:\Users\Pavel\source\repos\Requester\obj\Release\Requester.exe
 C:\Users\Pavel\source\repos\Requester\obj\Release\Requester.pdb
+C:\Users\Pavel\source\repos\Requester\obj\Release\CustomControls\ConfirmDialog.g.cs
+C:\Users\Pavel\source\repos\Requester\obj\Release\CustomControls\ConfirmDialog.baml

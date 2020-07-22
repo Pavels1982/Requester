@@ -1,4 +1,5 @@
-﻿using Requester.Models;
+﻿using MaterialDesignThemes.Wpf;
+using Requester.Models;
 using Requester.Services;
 using System;
 using System.Collections.Generic;
@@ -15,12 +16,7 @@ namespace Requester.ViewModels
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
-        #region Fields
-        /// <summary>
-        /// Контекст синхронизации.
-        /// </summary>
-        private SynchronizationContext current = SynchronizationContext.Current;
-        #endregion
+
 
         #region Events
         // <summary>
@@ -101,7 +97,7 @@ namespace Requester.ViewModels
         {
             get
             {
-                return new RelayCommand<RequestObject>(this.RequestManager.Remove);
+                return new RelayCommand<RequestObject>(ConfirmDelete);
             }
         }
         #endregion
@@ -113,29 +109,17 @@ namespace Requester.ViewModels
         public MainWindowViewModel()
         {
             this.RequestCollection = this.RequestManager.RequestCollection;
-
-            new Thread((o) =>
-            {
-                while (XMLHelper.ValidationStatus.Equals(Enums.ValidationStatus.Process)) { }
-
-                if (XMLHelper.ValidationStatus.Equals(Enums.ValidationStatus.Denied)) this.current.Post(ShowConfirmDialog, "Ошибка при валидации XML! Продолжить работу с программой?");
-            }).Start();
-
         }
         #endregion
 
         #region Methods
-        /// <summary>
-        /// Отображение диалогового окна.
-        /// </summary>
-        /// <param name="msg"></param>
-        private async void ShowConfirmDialog(object msg)
-        {
-            if (!await WindowManager.ShowDialog(msg as string))
-            {
-                Application.Current.Shutdown();
-            }
 
+        private async void ConfirmDelete(RequestObject obj)
+        {
+            if (await WindowManager.ShowDialog("ResponseDeleteConfirm"))
+            {
+                this.RequestManager.Remove(obj);
+            }
         }
 
         /// <summary>

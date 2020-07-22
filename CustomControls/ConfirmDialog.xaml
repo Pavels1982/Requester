@@ -19,7 +19,7 @@
                 Orientation="Horizontal"
                 HorizontalAlignment="Center">
                 <Button
-                    Content="Ok"
+                    Content="{StaticResource Ok}"
                     Width="100"
                     Command="{x:Static wpf:DialogHost.CloseDialogCommand}"
                     HorizontalAlignment="Right"
@@ -30,7 +30,7 @@
                     </Button.CommandParameter>
                 </Button>
                 <Button
-                    Content="Cancel"
+                    Content="{StaticResource Cancel}"
                     Width="100"
                     Command="{x:Static wpf:DialogHost.CloseDialogCommand}"
                     HorizontalAlignment="Right"
