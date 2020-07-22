@@ -14,22 +14,47 @@ namespace Requester.Services
 {
     public class RequestManager : INotifyPropertyChanged
     {
-        public ObservableCollection<RequestObject> RequestCollection { get; set; }
+        #region Fields
+        /// <summary>
+        /// Имплементация паттерна Singlton. Представляет единичный экземпляр класса <see cref="RequestManager"/>.
+        /// </summary>
+        private static RequestManager instance;
+       
+        /// <summary>
+        ///  Таймер проверяет коллекцию запросов на наличие запросов с интервалом запуска.  
+        /// </summary>
+        private DispatcherTimer timer = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
+        #endregion
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private DispatcherTimer timer { get; set; } = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
+        #region Properties
+        /// <summary>
+        /// Gets or sets коллекция запросов.
+        /// </summary>
+        public ObservableCollection<RequestObject> RequestCollection { get; private set; }
 
-        private static  RequestManager instance;
+        /// <summary>
+        /// Gets or sets количество прерванный либо невыполняемых в данный момент запросов.
+        /// </summary>
+        public int AbortedRequests { get; private set; }
+        #endregion
 
-        public int AbortedRequests { get; set; }
-
+        #region Methods
+        /// <summary>
+        /// Метод для получения объекта RequestManager (реализация синглтона).
+        /// </summary>
+        /// <returns></returns>
         public static RequestManager GetInstance()
         {
             if (instance == null)
             {
                 instance = new RequestManager();
-                instance.RequestCollection = XMLHelper.LoadRequests(PathManager.GetConfigFilePath());
+                if (XMLHelper.ValidateXML(PathManager.GetConfigFilePath(), PathManager.GetXSDFilePath()).Equals(ValidationStatus.Passed))
+                    instance.RequestCollection = XMLHelper.LoadRequests(PathManager.GetConfigFilePath());
+                else
+                    instance.RequestCollection = new ObservableCollection<RequestObject>();
+
                 instance.timer.Tick += instance.Timer_Tick;
                 instance.timer.Start();
             }
@@ -58,6 +83,10 @@ namespace Requester.Services
         }
 
 
+        /// <summary>
+        /// Метод запускающий процесс запроса.
+        /// </summary>
+        /// <param name="selectedRequest"></param>
         public void Run(RequestObject selectedRequest)
         {
             if (selectedRequest.Status.Equals(Status.ReadyToPost))
@@ -70,22 +99,27 @@ namespace Requester.Services
             }
         }
 
-
+        /// <summary>
+        /// Метод добавления нового объекта запроса в коллекцию запросов, с параметрами по умолчанию.
+        /// </summary>
         public void Add()
         {
             instance.RequestCollection.Add(new RequestObject());
             Logs.Add(String.Format("Добавление пользователем нового запроса. "));
         }
 
+        /// <summary>
+        /// Метод удаления объекта запроса из коллекции запросов.
+        /// </summary>
+        /// <param name="request"></param>
         public void Remove(RequestObject request)
         {
             Logs.Add(String.Format(string.Format("Удаление пользователем запроса с параметрами: Url {0}, TimeOut {1}, Interval {2}", request.Request.Url, request.Request.TimeOut, request.Request.Interval)));
             instance.RequestCollection.Remove(request);
-            
 
         }
+        #endregion
 
-        
 
 
 

@@ -47,7 +47,9 @@ D:\Рабочая\Requester\Requester\obj\Debug\Requester.Properties.Resources.r
 D:\Рабочая\Requester\Requester\obj\Debug\Requester.csproj.GenerateResource.Cache
 D:\Рабочая\Requester\Requester\obj\Debug\Requester.exe
 D:\Рабочая\Requester\Requester\obj\Debug\Requester.pdb
-D:\Рабочая\Requester\Requester\obj\Debug\Requester.csprojResolveAssemblyReference.cache
 C:\Users\Pavel\source\repos\Requester\obj\Debug\CustomControls\MaterialNumericUpDown.g.cs
 C:\Users\Pavel\source\repos\Requester\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Pavel\source\repos\Requester\obj\Debug\CustomControls\MaterialNumericUpDown.baml
+D:\Рабочая\Requester\Requester\obj\Debug\CustomControls\ConfirmDialog.g.cs
+D:\Рабочая\Requester\Requester\obj\Debug\CustomControls\ConfirmDialog.baml
+D:\Рабочая\Requester\Requester\obj\Debug\Requester.csprojResolveAssemblyReference.cache

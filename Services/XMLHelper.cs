@@ -2,16 +2,19 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
+using System.Xml.Serialization;
 using static Requester.Services.Enums;
 
 namespace Requester.Services
 {
     public static class XMLHelper
     {
-        private static ValidationStatus ValidationStatus { get; set; } 
+        public static ValidationStatus ValidationStatus { get; private set; }
+
         public static void SaveRequests(ObservableCollection<RequestObject> collection,  string fileName)
         {
             XDocument xdoc = new XDocument();
@@ -29,20 +32,18 @@ namespace Requester.Services
                 Request.Add(RequestTimeOutElem);
                 Request.Add(RequestIntervalElem);
 
+
                 Requests.Add(Request);
             }
 
             xdoc.Add(Requests);
             xdoc.Save(fileName);
-
+          //  CreateSchema();
         }
 
         public static ObservableCollection<RequestObject> LoadRequests(string fileName)
         {
             ObservableCollection<RequestObject> result = new ObservableCollection<RequestObject>();
-
-            if (ValidateXML(fileName).Equals(ValidationStatus.Passed))
-            {
                 try
                 {
                     XDocument xdoc = XDocument.Load(fileName);
@@ -50,37 +51,71 @@ namespace Requester.Services
 
                     foreach (var el in root.Elements("Request").ToList())
                     {
-
                         Request request = new Request(el.Attribute("url").Value, Int32.Parse(el.Element("timeout").Value), Int32.Parse(el.Element("interval").Value));
                         result.Add(new RequestObject(request));
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
 
                 }
-            }
-            CreatSchema();
-            return result;
+             return result;
         }
 
 
-        private static ValidationStatus ValidateXML(string fileName)
+
+        public static ValidationStatus ValidateXML2(string fileName, string schemaFile)
         {
             ValidationStatus = ValidationStatus.Process;
-            
+
             try
             {
-                XmlReaderSettings booksSettings = new XmlReaderSettings();
-                booksSettings.Schemas.Add("http://www.contoso.com/books", PathManager.GetXSDFilePath());
-                booksSettings.ValidationType = ValidationType.Schema;
-                booksSettings.ValidationEventHandler += new ValidationEventHandler(booksSettingsValidationEventHandler);
+                XDocument doc = XDocument.Load(fileName);
+                XmlSchemaSet schemaSet = new XmlSchemaSet();
 
-                XmlReader books = XmlReader.Create(fileName, booksSettings);
+                schemaSet.Add(null, schemaFile);
 
-                while (books.Read()) { }
+                doc.Validate(schemaSet, (obj, ex) =>
+                {
+                    ValidationStatus = ValidationStatus.Denied;
+                });
+
             }
-            catch
+            catch (Exception ex)
+            {
+                ValidationStatus = ValidationStatus.Denied;
+            }
+
+
+            if (!ValidationStatus.Equals(ValidationStatus.Denied)) ValidationStatus = ValidationStatus.Passed;
+
+            return ValidationStatus;
+        }
+
+
+        public static ValidationStatus ValidateXML(string fileName, string schemaFile)
+        {
+            ValidationStatus = ValidationStatus.Process;
+            try
+            {
+                XmlSchemaSet schema = new XmlSchemaSet();
+
+ 
+                schema.Add(null, schemaFile);
+
+                 XmlReaderSettings settings = new XmlReaderSettings();
+                settings.ValidationType = ValidationType.Schema;
+                settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessIdentityConstraints;
+                settings.ValidationFlags |= XmlSchemaValidationFlags.ReportValidationWarnings;
+                settings.Schemas = schema;
+
+                settings.ValidationEventHandler += ValidationCallBack;
+
+                XmlReader reader = XmlReader.Create(fileName, settings);
+
+                while (reader.Read()) ;
+            }
+            catch (Exception ex)
             {
                 ValidationStatus = ValidationStatus.Denied;
             }
@@ -89,32 +124,28 @@ namespace Requester.Services
             return ValidationStatus;
         }
 
-        static void booksSettingsValidationEventHandler(object sender, ValidationEventArgs e)
+        private static void ValidationCallBack(object sender, ValidationEventArgs e)
         {
-            if (e.Severity == XmlSeverityType.Warning || e.Severity == XmlSeverityType.Error)
-            {
-                ValidationStatus = ValidationStatus.Denied;
-            }
+            ValidationStatus = ValidationStatus.Denied;
+         //   Console.WriteLine($"Validation Error:\n   {e.Message}\n");
         }
 
 
-        private static void CreatSchema()
+
+        private static void CreateSchema()
         {
             XmlReader reader = XmlReader.Create(PathManager.GetConfigFilePath());
- 
-            XmlSchemaSet schemaSet = new XmlSchemaSet();
-            XmlSchemaInference inference = new XmlSchemaInference();
-            schemaSet = inference.InferSchema(reader);
 
-            XmlWriter writer;
+            XmlSchemaInference infer = new XmlSchemaInference();
+            XmlSchemaSet schemaSet =
+            infer.InferSchema(new XmlTextReader(PathManager.GetConfigFilePath()));
 
-            foreach (XmlSchema s in schemaSet.Schemas())
+            XmlWriter w = XmlWriter.Create(PathManager.GetXSDFilePath());
+            foreach (XmlSchema schema in schemaSet.Schemas())
             {
-                writer = XmlWriter.Create("config.xsd");
-                s.Write(writer);
-                writer.Close();
+                schema.Write(w);
             }
-            reader.Close();
+            w.Close();
 
         }
     }

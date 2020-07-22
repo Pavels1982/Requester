@@ -42,3 +42,533 @@
 21.07.2020 21:12:50 - Адрес http://httpstat.us/200 вернул код: OK. Время обращения: 00:12:50. Ожидание ответа: 00:00:00 
 21.07.2020 21:12:51 - Адрес http://httpstat.us/200 вернул код: OK. Время обращения: 00:12:50. Ожидание ответа: 00:00:01 
 21.07.2020 21:12:51 - Адрес http://httpstat.us/200 вернул код: OK. Время обращения: 00:12:50. Ожидание ответа: 00:00:01 
+22.07.2020 5:47:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:33. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:33. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:33. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:33. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:35 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:35. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:35 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:35. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:35 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:35. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:35 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:35. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:37 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:37. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:37. Ожидание ответа: 00:00:01 
+22.07.2020 5:47:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:37. Ожидание ответа: 00:00:01 
+22.07.2020 5:47:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:37. Ожидание ответа: 00:00:01 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:39 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:39. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:41 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:41. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:42 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:42. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:54 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:54. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:54 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:54. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:54 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:54. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:55. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:56. Ожидание ответа: 00:00:00 
+22.07.2020 5:47:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:47:56. Ожидание ответа: 00:00:00 
+22.07.2020 5:48:00 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:48:00. Ожидание ответа: 00:00:00 
+22.07.2020 5:48:01 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:48:01. Ожидание ответа: 00:00:00 
+22.07.2020 5:48:01 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в C:\Users\Pavel\source\repos\Requester\Models\RequestObject.cs:строка 93. Время обращения: 08:48:01. Ожидание ответа: 00:00:00 
+22.07.2020 5:48:10 - Удаление пользователем запроса со следующими параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 5:48:12 - Удаление пользователем запроса со следующими параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 5:48:14 - Удаление пользователем запроса со следующими параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 5:48:15 - Добавление пользователем нового запроса.  
+22.07.2020 5:49:04 - Добавление пользователем нового запроса.  
+22.07.2020 5:49:05 - Добавление пользователем нового запроса.  
+22.07.2020 5:49:05 - Добавление пользователем нового запроса.  
+22.07.2020 5:49:05 - Добавление пользователем нового запроса.  
+22.07.2020 8:08:30 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:30. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:30 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:30. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:30 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:30. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:30 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:30. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:30 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:30. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:32. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:32. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:32. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:32. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:32. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:32. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:37 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 8:08:38 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 8:08:41 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 8:08:42 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 8:08:44 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 230, Interval 0 
+22.07.2020 8:08:45 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:45. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:46 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:46. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:46 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:08:46. Ожидание ответа: 00:00:00 
+22.07.2020 8:08:47 - Добавление пользователем нового запроса.  
+22.07.2020 8:09:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:09:52. Ожидание ответа: 00:00:00 
+22.07.2020 8:10:00 - Добавление пользователем нового запроса.  
+22.07.2020 8:10:00 - Добавление пользователем нового запроса.  
+22.07.2020 8:10:00 - Добавление пользователем нового запроса.  
+22.07.2020 8:10:00 - Добавление пользователем нового запроса.  
+22.07.2020 8:25:28 - Добавление пользователем нового запроса.  
+22.07.2020 8:25:32 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:31. Ожидание ответа: 00:00:01 
+22.07.2020 8:25:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:33 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:33. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:34 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:34. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:34 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:34. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:38. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:38. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:38. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:38. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:38. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:38 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:38. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:55. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:55. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:55. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:55. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:55. Ожидание ответа: 00:00:00 
+22.07.2020 8:25:55 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 11:25:55. Ожидание ответа: 00:00:00 
+22.07.2020 9:10:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:10:51. Ожидание ответа: 00:00:01 
+22.07.2020 9:10:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:10:51. Ожидание ответа: 00:00:01 
+22.07.2020 9:10:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:10:51. Ожидание ответа: 00:00:01 
+22.07.2020 9:10:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:10:51. Ожидание ответа: 00:00:01 
+22.07.2020 9:10:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:10:51. Ожидание ответа: 00:00:01 
+22.07.2020 9:10:52 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:10:51. Ожидание ответа: 00:00:01 
+22.07.2020 9:24:50 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:50. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:50 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:50. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:50 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:50. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:51 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:50. Ожидание ответа: 00:00:01 
+22.07.2020 9:24:51 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:50. Ожидание ответа: 00:00:01 
+22.07.2020 9:24:51 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:50. Ожидание ответа: 00:00:01 
+22.07.2020 9:24:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:56. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:56. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:56. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:56. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:56. Ожидание ответа: 00:00:00 
+22.07.2020 9:24:56 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 12:24:56. Ожидание ответа: 00:00:00 
+22.07.2020 9:53:26 - Добавление пользователем нового запроса.  
+22.07.2020 9:53:26 - Добавление пользователем нового запроса.  
+22.07.2020 9:57:01 - Добавление пользователем нового запроса.  
+22.07.2020 10:07:32 - Добавление пользователем нового запроса.  
+22.07.2020 10:09:58 - Добавление пользователем нового запроса.  
+22.07.2020 10:10:21 - Добавление пользователем нового запроса.  
+22.07.2020 10:10:21 - Добавление пользователем нового запроса.  
+22.07.2020 10:10:21 - Добавление пользователем нового запроса.  
+22.07.2020 10:10:21 - Добавление пользователем нового запроса.  
+22.07.2020 10:31:10 - Добавление пользователем нового запроса.  
+22.07.2020 10:31:10 - Добавление пользователем нового запроса.  
+22.07.2020 10:31:10 - Добавление пользователем нового запроса.  
+22.07.2020 10:40:06 - Добавление пользователем нового запроса.  
+22.07.2020 10:40:06 - Добавление пользователем нового запроса.  
+22.07.2020 10:40:06 - Добавление пользователем нового запроса.  
+22.07.2020 10:47:52 - Добавление пользователем нового запроса.  
+22.07.2020 11:14:32 - Добавление пользователем нового запроса.  
+22.07.2020 11:14:32 - Добавление пользователем нового запроса.  
+22.07.2020 11:14:33 - Добавление пользователем нового запроса.  
+22.07.2020 11:17:03 - Добавление пользователем нового запроса.  
+22.07.2020 11:17:03 - Добавление пользователем нового запроса.  
+22.07.2020 11:17:03 - Добавление пользователем нового запроса.  
+22.07.2020 11:17:04 - Добавление пользователем нового запроса.  
+22.07.2020 11:26:59 - Добавление пользователем нового запроса.  
+22.07.2020 11:26:59 - Добавление пользователем нового запроса.  
+22.07.2020 11:26:59 - Добавление пользователем нового запроса.  
+22.07.2020 11:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 11:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 11:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 11:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:12 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:12 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:12 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:12 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:40 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:40 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:40 - Добавление пользователем нового запроса.  
+22.07.2020 11:36:40 - Добавление пользователем нового запроса.  
+22.07.2020 11:38:02 - Добавление пользователем нового запроса.  
+22.07.2020 11:38:02 - Добавление пользователем нового запроса.  
+22.07.2020 11:38:02 - Добавление пользователем нового запроса.  
+22.07.2020 11:38:02 - Добавление пользователем нового запроса.  
+22.07.2020 11:38:02 - Добавление пользователем нового запроса.  
+22.07.2020 11:41:07 - Добавление пользователем нового запроса.  
+22.07.2020 11:41:07 - Добавление пользователем нового запроса.  
+22.07.2020 11:41:07 - Добавление пользователем нового запроса.  
+22.07.2020 11:41:08 - Добавление пользователем нового запроса.  
+22.07.2020 11:44:16 - Добавление пользователем нового запроса.  
+22.07.2020 11:44:17 - Добавление пользователем нового запроса.  
+22.07.2020 11:44:17 - Добавление пользователем нового запроса.  
+22.07.2020 11:44:17 - Добавление пользователем нового запроса.  
+22.07.2020 11:47:13 - Добавление пользователем нового запроса.  
+22.07.2020 11:47:13 - Добавление пользователем нового запроса.  
+22.07.2020 11:47:14 - Добавление пользователем нового запроса.  
+22.07.2020 11:47:14 - Добавление пользователем нового запроса.  
+22.07.2020 11:47:14 - Добавление пользователем нового запроса.  
+22.07.2020 12:22:36 - Добавление пользователем нового запроса.  
+22.07.2020 12:22:37 - Добавление пользователем нового запроса.  
+22.07.2020 12:22:37 - Добавление пользователем нового запроса.  
+22.07.2020 12:25:28 - Добавление пользователем нового запроса.  
+22.07.2020 12:56:20 - Добавление пользователем нового запроса.  
+22.07.2020 12:56:20 - Добавление пользователем нового запроса.  
+22.07.2020 12:56:21 - Добавление пользователем нового запроса.  
+22.07.2020 13:30:16 - Добавление пользователем нового запроса.  
+22.07.2020 13:30:16 - Добавление пользователем нового запроса.  
+22.07.2020 13:30:17 - Добавление пользователем нового запроса.  
+22.07.2020 13:30:17 - Добавление пользователем нового запроса.  
+22.07.2020 13:32:50 - Добавление пользователем нового запроса.  
+22.07.2020 13:32:50 - Добавление пользователем нового запроса.  
+22.07.2020 13:32:51 - Добавление пользователем нового запроса.  
+22.07.2020 13:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 13:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 13:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 13:35:21 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:37 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:38 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:38 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:55 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:55 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:55 - Добавление пользователем нового запроса.  
+22.07.2020 13:45:55 - Добавление пользователем нового запроса.  
+22.07.2020 13:46:46 - Добавление пользователем нового запроса.  
+22.07.2020 13:46:46 - Добавление пользователем нового запроса.  
+22.07.2020 13:46:46 - Добавление пользователем нового запроса.  
+22.07.2020 13:53:09 - Добавление пользователем нового запроса.  
+22.07.2020 13:53:09 - Добавление пользователем нового запроса.  
+22.07.2020 13:53:09 - Добавление пользователем нового запроса.  
+22.07.2020 13:56:44 - Добавление пользователем нового запроса.  
+22.07.2020 13:56:45 - Добавление пользователем нового запроса.  
+22.07.2020 13:56:45 - Добавление пользователем нового запроса.  
+22.07.2020 13:56:45 - Добавление пользователем нового запроса.  
+22.07.2020 14:00:35 - Добавление пользователем нового запроса.  
+22.07.2020 14:02:18 - Добавление пользователем нового запроса.  
+22.07.2020 14:02:18 - Добавление пользователем нового запроса.  
+22.07.2020 14:11:29 - Добавление пользователем нового запроса.  
+22.07.2020 14:11:29 - Добавление пользователем нового запроса.  
+22.07.2020 14:11:30 - Добавление пользователем нового запроса.  
+22.07.2020 14:12:59 - Добавление пользователем нового запроса.  
+22.07.2020 14:12:59 - Добавление пользователем нового запроса.  
+22.07.2020 14:13:00 - Добавление пользователем нового запроса.  
+22.07.2020 14:14:11 - Добавление пользователем нового запроса.  
+22.07.2020 14:14:11 - Добавление пользователем нового запроса.  
+22.07.2020 14:14:11 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:09 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:09 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:10 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:57 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:57 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:57 - Добавление пользователем нового запроса.  
+22.07.2020 14:16:58 - Добавление пользователем нового запроса.  
+22.07.2020 14:18:57 - Добавление пользователем нового запроса.  
+22.07.2020 14:18:57 - Добавление пользователем нового запроса.  
+22.07.2020 14:18:57 - Добавление пользователем нового запроса.  
+22.07.2020 14:18:58 - Добавление пользователем нового запроса.  
+22.07.2020 14:20:46 - Добавление пользователем нового запроса.  
+22.07.2020 14:20:46 - Добавление пользователем нового запроса.  
+22.07.2020 14:20:46 - Добавление пользователем нового запроса.  
+22.07.2020 14:20:47 - Добавление пользователем нового запроса.  
+22.07.2020 14:21:00 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:00. Ожидание ответа: 00:00:00 
+22.07.2020 14:21:00 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:00. Ожидание ответа: 00:00:00 
+22.07.2020 14:21:00 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:00. Ожидание ответа: 00:00:00 
+22.07.2020 14:21:00 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:00. Ожидание ответа: 00:00:00 
+22.07.2020 14:21:02 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:02. Ожидание ответа: 00:00:00 
+22.07.2020 14:21:02 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:02. Ожидание ответа: 00:00:00 
+22.07.2020 14:21:02 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:21:02. Ожидание ответа: 00:00:00 
+22.07.2020 14:22:08 - Добавление пользователем нового запроса.  
+22.07.2020 14:22:08 - Добавление пользователем нового запроса.  
+22.07.2020 14:22:09 - Добавление пользователем нового запроса.  
+22.07.2020 14:22:09 - Добавление пользователем нового запроса.  
+22.07.2020 14:22:10 - Добавление пользователем нового запроса.  
+22.07.2020 14:23:30 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 5, Interval 0 
+22.07.2020 14:27:04 - Добавление пользователем нового запроса.  
+22.07.2020 14:27:04 - Добавление пользователем нового запроса.  
+22.07.2020 14:27:04 - Добавление пользователем нового запроса.  
+22.07.2020 14:27:07 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:27:07. Ожидание ответа: 00:00:00 
+22.07.2020 14:27:07 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:27:07. Ожидание ответа: 00:00:00 
+22.07.2020 14:27:07 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 17:27:07. Ожидание ответа: 00:00:00 
+22.07.2020 15:00:51 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:00:51. Ожидание ответа: 00:00:00 
+22.07.2020 15:00:51 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:00:51. Ожидание ответа: 00:00:00 
+22.07.2020 15:00:51 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:00:51. Ожидание ответа: 00:00:00 
+22.07.2020 15:00:58 - Добавление пользователем нового запроса.  
+22.07.2020 15:01:01 - Добавление пользователем нового запроса.  
+22.07.2020 15:01:04 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:04. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:04 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:04. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:04 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:04. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:04 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:04. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:04 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:04. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:05. Ожидание ответа: 00:00:01 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:05. Ожидание ответа: 00:00:01 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:05. Ожидание ответа: 00:00:01 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:05. Ожидание ответа: 00:00:01 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:05. Ожидание ответа: 00:00:01 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:06. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:06. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:06. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:06. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:06 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:06. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:08 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:08. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:08 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:08. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:08 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:08. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:10 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:10. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:10 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:10. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:15 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:15. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:15 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:15. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:16 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:16. Ожидание ответа: 00:00:00 
+22.07.2020 15:01:16 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass31_0.<RequestAsync>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 93. Время обращения: 18:01:16. Ожидание ответа: 00:00:00 
+22.07.2020 15:18:25 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass28_0.<StartRequest>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 140. Время обращения: 18:18:25. Ожидание ответа: 00:00:00 
+22.07.2020 15:18:25 - Адрес http://httpstat.us/200 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass28_0.<StartRequest>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 140. Время обращения: 18:18:25. Ожидание ответа: 00:00:00 
+22.07.2020 15:18:29 - Удаление пользователем запроса с параметрами: Url http://httpstat.us/200, TimeOut 5, Interval 0 
+22.07.2020 15:18:35 - Адрес http://httpstat.us/200?sleep=5000 вернул код: System.Net.WebException: Удаленный сервер возвратил ошибку: (407) Требуется аутентификация посредника.
+   в System.Net.HttpWebRequest.GetResponse()
+   в Requester.Models.RequestObject.<>c__DisplayClass28_0.<StartRequest>b__0(Object o) в D:\Рабочая\Requester\Requester\Models\RequestObject.cs:строка 140. Время обращения: 18:18:34. Ожидание ответа: 00:00:01 

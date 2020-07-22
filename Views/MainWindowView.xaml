@@ -8,119 +8,94 @@
         xmlns:local="clr-namespace:Requester"
         xmlns:services="clr-namespace:Requester.Services"
         xmlns:converters="clr-namespace:Requester.Services.Converters"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
         mc:Ignorable="d"
+        Activated="Window_Activated"
+        Closing="Window_Closing"
         WindowStartupLocation="CenterScreen"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown"
         BorderThickness="0"
-        Topmost="True"
-        Visibility="Visible"
         MinWidth="760"
-        Title="MainWindow" Height="560.524" Width="522.33" WindowStyle="None">
+        MinHeight="240"
+        Title="Requester" Height="560.524" Width="522.33">
     <Window.Resources>
         <converters:IntToTimeConverter x:Key="IntToTimeConverter"/>
         <converters:EnumBooleanConverter x:Key="EnumBooleanConverter"/>
     </Window.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <materialDesign:DialogHost Identifier="main">
 
-        <StackPanel 
-            Margin="2"
-            Grid.Row="0"
-            HorizontalAlignment="Right"
-            Orientation="Horizontal">
-            <Button 
-                Background="{x:Null}" 
-                BorderBrush="{x:Null}" 
-                Width="20" 
-                Height="20" 
-                Click="HideToTray">
-                <materialDesign:PackIcon
-                        Foreground="Gray"
-                        Kind="WindowMinimize" 
-                        Margin="-14 0 0 0"/>
-            </Button>
-
-            <Button 
-                Background="{x:Null}" 
-                BorderBrush="{x:Null}" 
-                Width="20" 
-                Height="20" 
-                Command="{Binding CloseWindow}">
-                <materialDesign:PackIcon 
-                        Foreground="Gray"
-                        Kind="WindowClose" Margin="-14 -4 0 0"/>
-            </Button>
-        </StackPanel>
+        <Grid>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
 
-        <StackPanel 
-            Margin="15"
-            Grid.Row="1" 
-            Orientation="Horizontal"
-            HorizontalAlignment="Left">
-            <TextBlock
-                FontSize="34"
-                Foreground="CornflowerBlue"
-                FontWeight="DemiBold"
-                Text="Requester"/>
+                <materialDesign:ColorZone
+                Grid.Row="1"
+                Mode="PrimaryDark">
+                    <TextBlock
+                    Margin="20"
+                    FontSize="24"
+                    Foreground="WhiteSmoke"
+                    Text="Requester"/>
+                </materialDesign:ColorZone>
 
-        </StackPanel>
-        <StackPanel 
+
+
+                <StackPanel 
             Grid.Row="1" 
             Orientation="Horizontal" 
             HorizontalAlignment="Right"
-            Margin="12"
+            Margin="0 12 15 12 "
             >
-            <materialDesign:Badged
+                    <materialDesign:Badged
             Badge="{Binding RequestManager.AbortedRequests}"
             Margin="12"
             >
-                <Button 
+                        <Button 
                 Width="100"
                 Content="Запустить"
                 Command="{Binding RunAbortedRequests}"
                 >
-                </Button>
+                        </Button>
 
-            </materialDesign:Badged>
+                    </materialDesign:Badged>
 
-            <Button 
+                    <Button 
                 Width="120"
                 Content="Остановить"
                 Command="{Binding AbortedRequests}"
                 >
-            </Button>
+                    </Button>
 
-        </StackPanel>
+                </StackPanel>
 
 
-        <Grid
+                <Grid
             Grid.Row="2"
             Height="Auto"
             Width="Auto">
-            <ScrollViewer
-                Margin="15"
+                    <ScrollViewer
                 VerticalScrollBarVisibility="Visible">
-                <ItemsControl ItemsSource="{Binding RequestCollection}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Expander Background="WhiteSmoke" Margin="2"
+                        <ItemsControl ItemsSource="{Binding RequestCollection}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander Background="WhiteSmoke" Margin="2"
                                       BorderThickness="0.5"
                                       BorderBrush="DimGray">
 
-                                    <Expander.Header>
-                                    <StackPanel Margin="-15,-10,0,0">
-                                        <Grid Height="72">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="0.6*" />
-                                                <ColumnDefinition Width="0.4*" />
-                                            </Grid.ColumnDefinitions>
-                                            <Grid Grid.Column="0">
-                                                <TextBox
+                                        <Expander.Header>
+                                            <StackPanel Margin="-15,-10,0,0">
+                                                <Grid Height="72">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="0.6*" />
+                                                        <ColumnDefinition Width="0.4*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid Grid.Column="0">
+                                                        <TextBox
                                                         Margin="2"
                                                         Height="55"
                                                         FontSize="10"
@@ -129,70 +104,70 @@
                                                         materialDesign:HintAssist.Hint="Код ответа:"
                                                         Text="{Binding Path=Request.Response, Mode=TwoWay}"
                                                         >
-                                                    <TextBox.Style>
-                                                        <Style BasedOn="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" TargetType="TextBox">
-                                                            <Setter Property="IsEnabled" Value="True"/>
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
-                                                                    <Setter Property="IsEnabled" Value="False"/>
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
+                                                            <TextBox.Style>
+                                                                <Style BasedOn="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" TargetType="TextBox">
+                                                                    <Setter Property="IsEnabled" Value="True"/>
+                                                                    <Style.Triggers>
+                                                                        <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
+                                                                            <Setter Property="IsEnabled" Value="False"/>
+                                                                        </DataTrigger>
+                                                                    </Style.Triggers>
 
-                                                        </Style>
-                                                    </TextBox.Style>
-                                                </TextBox>
-                                            </Grid>
+                                                                </Style>
+                                                            </TextBox.Style>
+                                                        </TextBox>
+                                                    </Grid>
 
-                                
-                                            <Grid
+
+                                                    <Grid
                                                 Grid.Column="1">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition/>
-                                                    <ColumnDefinition/>
-                                                </Grid.ColumnDefinitions>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition/>
-                                                    <RowDefinition/>
-                                                </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
 
-                                                <StackPanel 
+                                                        <StackPanel 
                                                     Margin="2"
                                                     Grid.Column="0"
                                                     Grid.Row="0"
                                                     Orientation="Vertical">
-                                                    <TextBlock 
+                                                            <TextBlock 
                                                         HorizontalAlignment="Center"
                                                         Foreground="Gray"
                                                         FontSize="10"
                                                         Text="Длительность запроса"/>
-                                                    <TextBlock 
+                                                            <TextBlock 
                                                         HorizontalAlignment="Center"
                                                         FontSize="16"
                                                         Text="{Binding Path=DurationRequestTime, Converter={StaticResource IntToTimeConverter}}"/>
 
-                                                </StackPanel>
+                                                        </StackPanel>
 
-                                                <StackPanel
+                                                        <StackPanel
                                                     Margin="2"
                                                     Grid.Column="1"
                                                     Grid.Row="0"
                                                     Orientation="Vertical">
-                                                    <TextBlock 
+                                                            <TextBlock 
                                                         HorizontalAlignment="Center"
                                                         Foreground="Gray"
                                                         FontSize="10"
                                                         Text="Время последнего запроса"/>
-                                                    <TextBlock 
+                                                            <TextBlock 
                                                         HorizontalAlignment="Center"
                                                         FontSize="16"
                                                         Text="{Binding Path=LastRequestTimeEnded, Converter={StaticResource IntToTimeConverter}}"/>
 
-                                                </StackPanel>
+                                                        </StackPanel>
 
 
 
 
-                                                <Button                                                    
+                                                        <Button                                                    
                                                     Grid.Column="0"
                                                     Grid.Row="1"
                                                     Grid.ColumnSpan="2"
@@ -203,52 +178,52 @@
                                                     Command="{Binding DataContext.RunRequest, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
                                                     CommandParameter="{Binding}"
                                                     >
-                                                    <Button.Style>
-                                                        <Style BasedOn="{StaticResource MaterialDesignRaisedButton}" TargetType="Button">
-                                                            <Setter Property="materialDesign:ButtonProgressAssist.IsIndeterminate" Value="False"/>
-                                                            <Setter Property="Content" Value="Пуск"/>
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
-                                                                    <Setter Property="materialDesign:ButtonProgressAssist.IsIndeterminate" Value="True"/>
-                                                                    <Setter Property="Content" Value="Стоп"/>
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </Button.Style>
-                                                </Button>
+                                                            <Button.Style>
+                                                                <Style BasedOn="{StaticResource MaterialDesignRaisedButton}" TargetType="Button">
+                                                                    <Setter Property="materialDesign:ButtonProgressAssist.IsIndeterminate" Value="False"/>
+                                                                    <Setter Property="Content" Value="Пуск"/>
+                                                                    <Style.Triggers>
+                                                                        <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
+                                                                            <Setter Property="materialDesign:ButtonProgressAssist.IsIndeterminate" Value="True"/>
+                                                                            <Setter Property="Content" Value="Стоп"/>
+                                                                        </DataTrigger>
+                                                                    </Style.Triggers>
+                                                                </Style>
+                                                            </Button.Style>
+                                                        </Button>
 
 
 
-                                            </Grid>
+                                                    </Grid>
 
 
-                                        </Grid>
-                                    </StackPanel>
-                                </Expander.Header>
-                                <Grid Height="90"
+                                                </Grid>
+                                            </StackPanel>
+                                        </Expander.Header>
+                                        <Grid Height="90"
                                       Background="LightGray">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.35*"/>
-                                        <ColumnDefinition Width="0.25*"/>
-                                        <ColumnDefinition Width="0.25*"/>
-                                        <ColumnDefinition Width="0.10*"/>
-                                    </Grid.ColumnDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.35*"/>
+                                                <ColumnDefinition Width="0.25*"/>
+                                                <ColumnDefinition Width="0.25*"/>
+                                                <ColumnDefinition Width="0.10*"/>
+                                            </Grid.ColumnDefinitions>
 
-                                    <Grid.Style>
-                                        <Style TargetType="Grid">
-                                            <Setter Property="IsEnabled" Value="True"/>
-                                            <Style.Triggers>
-                                                <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
-                                                    <Setter Property="IsEnabled" Value="False"/>
-                                                </DataTrigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </Grid.Style>
-
-                                   
+                                            <Grid.Style>
+                                                <Style TargetType="Grid">
+                                                    <Setter Property="IsEnabled" Value="True"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=Status, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Process}" Value="True">
+                                                            <Setter Property="IsEnabled" Value="False"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Grid.Style>
 
 
-                                    <TextBox
+
+
+                                            <TextBox
                                          Grid.Column="0"
                                          Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                                          materialDesign:HintAssist.Hint="Url"
@@ -256,10 +231,10 @@
                                         Height="44"
                                            Text="{Binding Path=Request.Url, UpdateSourceTrigger=PropertyChanged}"
                                         >
-                                    </TextBox>
-                                        
+                                            </TextBox>
 
-                                    <customControls:MaterialNumericUpDown
+
+                                            <customControls:MaterialNumericUpDown
                          
                                         Title="Время ожидание ответа в сек."
                                         Grid.Column="1"
@@ -269,7 +244,7 @@
                                         Value="{Binding Path=Request.TimeOut, Mode=TwoWay}"
                                         />
 
-                                    <customControls:MaterialNumericUpDown
+                                            <customControls:MaterialNumericUpDown
                                         Title="Интервал между запросами в сек."
                                         Grid.Column="2"
                                         Grid.Row="0"
@@ -279,38 +254,55 @@
                                         Value="{Binding Path=Request.Interval, Mode=TwoWay}"
                                         />
 
-                                    <Button
+                                            <Button
                                         Grid.Column="3"
                                         Foreground="Black"
                                         Style="{StaticResource MaterialDesignFlatButton}"
                                         Command="{Binding DataContext.DeleteRequest, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
                                         CommandParameter="{Binding}">
 
-                                    <materialDesign:PackIcon Kind="DeleteForever"  Width="25" Height="25"/>
-                                    </Button>
+                                                <materialDesign:PackIcon Kind="DeleteForever"  Width="25" Height="25"/>
+                                            </Button>
 
 
 
-                                </Grid>
-                            </Expander>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                                        </Grid>
+                                    </Expander>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
 
-            </ScrollViewer>
+                    </ScrollViewer>
+
+
+                </Grid>
+
+                <materialDesign:ColorZone
+                Grid.Row="3"
+                Mode="PrimaryDark">
+                    <TextBlock
+                    Margin="20"
+                    Text="Copyright 2020"/>
+                </materialDesign:ColorZone>
+
+
+
+            </Grid>
 
             <Button
-                Grid.Row="1"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Bottom"
-                Margin="15 0 45 15"
-                Style="{StaticResource MaterialDesignFloatingActionButton}"
+                Margin="15 0 25 35"
+                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
                 FontSize="32"
-                Content="+"
                 Command="{Binding AddNewRequest}"
             >
+                <materialDesign:PackIcon
+          Kind="Plus"
+          Height="22"
+          Width="22" />
             </Button>
-        </Grid>
 
-    </Grid>
+        </Grid>
+    </materialDesign:DialogHost>
 </Window>

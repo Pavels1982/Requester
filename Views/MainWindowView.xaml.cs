@@ -1,8 +1,10 @@
-﻿using Requester.ViewModels;
+﻿using Requester.Services;
+using Requester.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,15 +29,28 @@ namespace Requester.Views
             this.DataContext = new MainWindowViewModel();
         }
 
-        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private async void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            this.DragMove();
+            e.Cancel = true;
+
+            bool result = await WindowManager.ShowDialog("Выйти из приложения?");
+            if (result)
+            {
+                (this.DataContext as MainWindowViewModel).BeforeCloseApp();
+                e.Cancel = false;
+                Application.Current.Shutdown();
+            }
+
         }
 
-        private void HideToTray(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
-        }
 
+
+        private async void Window_Activated(object sender, EventArgs e)
+        {
+            if (XMLHelper.ValidationStatus.Equals(Enums.ValidationStatus.Denied))
+            {
+
+            }
+        }
     }
 }

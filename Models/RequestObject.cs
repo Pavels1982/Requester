@@ -15,35 +15,73 @@ namespace Requester.Models
 {
     public class RequestObject : INotifyPropertyChanged
     {
+
         public event PropertyChangedEventHandler PropertyChanged;
 
+        #region Field
+        /// <summary>
+        /// Текущий запрос. 
+        /// </summary>
+        private HttpWebRequest currentRequest;
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets модель запроса.
+        /// </summary>
         public Request Request { get; set; }
 
-        private HttpWebRequest currentRequest { get; set; }
-
+        /// <summary>
+        /// Gets or sets статус запроса.
+        /// </summary>
         public Status Status { get; set; }
 
+        /// <summary>
+        /// Get or set a value indicating whether указывает прерван ли запрос.
+        /// </summary>
         public bool IsAborted { get; private set; } = true;
 
-        public int DurationRequestTime { get; set; }
+        /// <summary>
+        /// Gets or sets время затраченое на выполнение запроса.
+        /// </summary>
+        public int DurationRequestTime { get; private set; }
 
-        public int LastRequestTimeEnded { get; set; }
+        /// <summary>
+        /// Gets or sets время поледнего обращения к серверу.
+        /// </summary>
+        public int LastRequestTimeEnded { get; private set; }
+        #endregion
 
 
+
+        #region Constructors
+        /// <summary>
+        /// Конструктор по умолчанию.
+        /// </summary>
         public RequestObject()
         {
-            Request = new Request("http://httpstat.us/200");
+            Request = new Request();
         }
 
+        /// <summary>
+        /// Конструктор, где в качестве параметра передаётся экземпляр класса Request.
+        /// </summary>
         public RequestObject(Request request)
         {
             this.Request = request;
         }
+        #endregion
 
 
+        #region Methods
 
-
-        public async void Run(bool restart = false)
+        /// <summary>
+        /// Метод предварительной подготовки к запуску процесса запроса.
+        /// </summary>
+        /// <param name="restart"></param>
+        public void Run(bool restart = false)
         {
             if (restart) IsAborted = false;
 
@@ -54,7 +92,7 @@ namespace Requester.Models
                     if (!IsAborted)
                     {
                         DurationRequestTime = 0;
-                        RequestAsync(this.Request.Url);
+                        StartRequest(this.Request.Url);
                     }
                 }
                 else
@@ -64,7 +102,13 @@ namespace Requester.Models
             }
 
         }
+        
 
+        /// <summary>
+        /// Метод проверки валидности Url.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public bool CheckUrl(object value)
         {
             Uri uriResult;
@@ -74,8 +118,11 @@ namespace Requester.Models
 
 
 
-
-        private void RequestAsync(string url)
+        /// <summary>
+        /// Метод запускающий новый поток с запросом по указанному адресу. 
+        /// </summary>
+        /// <param name="url">Адрес сервера</param>
+        private void StartRequest(string url)
         {
             Status = Status.Process;
 
@@ -116,6 +163,9 @@ namespace Requester.Models
             return t.ToString(@"hh\:mm\:ss");
         }
 
+        /// <summary>
+        /// Метод прерывание запроса.
+        /// </summary>
         public void Abort()
         {
             IsAborted = true;
@@ -126,7 +176,7 @@ namespace Requester.Models
             }
        
         }
-
+        #endregion
 
 
 

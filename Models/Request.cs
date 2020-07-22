@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace Requester.Models
 {
+
     public class Request : INotifyPropertyChanged
     {
+
+
         public string Url { get; set; }
 
         public string Response { get; set; }
@@ -18,10 +16,9 @@ namespace Requester.Models
         public int Interval { get; set; }
 
 
-        public Request(string url, int timeOut = 5)
+        public Request()
         {
-            this.Url = url;
-            this.TimeOut = timeOut;
+            GetDefaultParameter(this);
         }
 
         public Request(string url, int timeOut, int interval)
@@ -30,6 +27,16 @@ namespace Requester.Models
             this.TimeOut = timeOut;
             this.Interval = interval;
         }
+
+        private void GetDefaultParameter(Request request)
+        {
+            this.Url = "http://httpstat.us/200?sleep=5000";
+            this.TimeOut = 7;
+            this.Interval = 10;
+        }
+
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
     }
